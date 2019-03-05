@@ -1,0 +1,200 @@
+//作业题目列表(DetailObjective.vue DetailSubjective.vue) 相关样式
+
+//作业页面的主class
+.homework{
+  margin:0 auto 60px;
+}
+
+
+//作业详情-- 右侧进度
+.hw-detail-box{
+  display: flex;
+  background: #fff;
+  border:1px solid #f5f5f5;
+  border-radius: 4px;
+  padding: 32px;
+  min-height: 600px;
+  overflow: hidden;
+
+
+  .hw-detail-left{
+    flex:1;
+    padding-right:20px;
+  }
+
+  .hw-detail-right{
+    width: 210px;
+    padding-left:16px;
+    border-left:1px solid #f2f2f2;
+
+    .hw-progress-title{
+      font-size:16px;
+      color:#c0c0c0;
+      margin-bottom:6px;
+    }
+    .hw-progress-stu{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin-top:18px;
+
+      .hw-progress-stu-name{
+        width:45px;
+        font-size:14px;
+        color:#606060;
+        line-height: 22px;
+        margin-right:6px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .hw-progress-main{
+        flex: 1;
+
+        .hw-progress-box{
+          width:100%;
+          display:flex;
+
+          .hw-progress-item{
+            height: 6px;
+            flex: 1;
+            margin-right:2px;
+            background: #d9d9d9;
+          }
+          .hw-progress-item-done{
+            background: #B7EB8F;
+          }
+          .hw-progress-item-doing{
+            background: #FFBF00;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+//作业详情-- 左侧题目列表及正确率
+.hw-detail-box{
+  .hw-name{
+    font-size:20px;
+    color:#262626;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  .hw-time{
+    font-size:12px;
+    color:#c0c0c0;
+    line-height: 20px;
+  }
+
+  .hw-question-list{
+    margin-top:40px;
+
+    .hwq-title{
+      .hwq-title-item{
+        margin-right:32px;
+        margin-bottom:16px;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+
+        span{
+          font-size:14px;
+          color:#909090;
+          line-height: 14px;
+          padding:6px 9px;
+          border-radius: 2px;
+          display: inline-block;
+        }
+      }
+      .hwq-title-item-active{
+        span{
+          background: #eee9fd;
+          color:#F08D00;
+        }
+      }
+      .hwq-title-item-done{
+        .hw-icon-done{
+          font-size:16px;
+          color:#81d857;
+          position: absolute;
+          right: -8px;
+          top:-8px;
+        }
+      }
+    } /* end hwq-title*/
+    .hwq-content{
+      .hwq-content-item{
+
+        .grey-content{
+          background:#f7fafa;
+          width:670px;
+          padding:8px 16px;
+
+          .grey-left{
+            display: inline-block;
+            vertical-align: middle;
+            width:300px;
+
+            h3{
+              font-size:16px;
+              color:#606060;
+              margin-bottom:8px;
+            }
+            p{
+              font-size:14px;
+              color:#909090;
+              line-height:22px;
+            }
+          }
+          .grey-right{
+            display: inline-block;
+            vertical-align: middle;
+            min-width:100px;
+
+            .grey-title{
+              font-size:12px;
+              color:#93D18E;
+              line-height: 20px;
+            }
+            .grey-data{
+              font-size:12px;
+              color:#53C75C;
+
+              span{
+                margin-right:16px;
+              }
+              .rate{
+                font-size:24px;
+                line-height:32px;
+              }
+            }
+
+          }
+
+          .grey-opera-box{
+            display: inline-block;
+            vertical-align: middle;
+            width:96px;
+            border-left:1px solid #d5d5d5;
+            text-align:center;
+
+            .grey-link{
+              font-size:16px;
+              color:#F08D00;
+            }
+          }
+
+
+        }
+        .hwq-btn-box{
+          margin-top:32px;
+        }
+
+      }
+    }/*end  hwq-content*/
+
+  }
+  /*end hw-question-list*/
+
+}

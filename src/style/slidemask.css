@@ -1,0 +1,113 @@
+.x-solt-mask{
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index:156;
+  background:rgba(0,0,0,.24);
+}
+.x-silder-block{
+  width:264px;
+  height:100%;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  overflow-y:auto;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  background:#fff;
+  z-index:157;
+}
+.x-silder-block .x-solt-title{
+  height:36px;
+  line-height:36px;
+  padding-left:12px;
+  font-size:12px;
+  font-weight:400;
+  color:#c0c0c0;
+  background:rgba(0,0,0,0.04);
+}
+.x-option{
+  position:absolute;
+  width:264px;
+  bottom:0;
+  right:0;
+  display:flex;
+  height:40px;
+  line-height:40px;
+  text-align: center;
+  background:#fafafa;
+  color:#606060;
+}
+.x-option .x-button{
+  flex: 1;
+  cursor: pointer;
+
+}
+.x-option .x-button-confirm{
+  background:#F08D00;
+  color:#fff;
+}
+/*筛选中间部分*/
+.x-slider-content{
+  position:absolute;
+  top:36px;
+  bottom:40px;
+  left:12px;
+  right: 0;
+  overflow-y:auto;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+
+}
+.x-slider-block-title{
+  padding-bottom:12px;
+  font-size:12px;
+  font-weight:400;
+  color:#606060;
+}
+.x-slider-block-title:first-child{
+  padding-top:12px;
+}
+.x-slider-span span{
+  display:inline-block;
+  min-width:72px;
+  height:28px;
+  border-radius:2px;
+  background:#f5f5f5;
+  color:#606060;
+  font-size:12px;
+  line-height: 28px;
+  text-align: center;
+  margin-right:12px;
+  margin-bottom:12px;
+  cursor:pointer;
+}
+.x-slider-span .double{
+  width:156px;
+}
+.x-slider-span .active{
+  background:#F08D00;
+  color:#fff;
+}
+/* switch 开关*/
+.x-switch-slider .weui-cells{
+  padding:0!important;
+}
+.x-switch-slider .weui-cells .weui-cell{
+  padding-left:0;
+  font-size:14px;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(264px);
+}

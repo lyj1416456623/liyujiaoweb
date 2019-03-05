@@ -1,0 +1,39 @@
+.auth-header {
+  height: auto !important;
+  position: relative;
+  padding: 16px 24px 0 24px !important;
+  background: #fff;
+}
+
+.ziyue-breadcrumb {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #909090;
+}
+.ziyue-breadcrumb .active {
+  color: #606060;
+}
+.ziyue-breadcrumb span {
+  margin: 0 32px;
+
+}
+
+.auth-title {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #222;
+  font-weight: normal;
+}
+
+.auth-discript {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #606060;
+
+}
+.mockscore-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+}

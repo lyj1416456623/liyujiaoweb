@@ -1,0 +1,146 @@
+/**
+ * Created by gean on 2018/10/23.
+ * 课程表日历样式 将full-calendar控件放在 .xi-fullcalendar 容器里面
+ * 使用插件时,引入内容:
+ * import FullCalendar from '../../vue-fullcalendar-component/index'; //注意不同页面引入时的地址
+ * import moment from 'moment';
+ */
+
+/*修改之前的默认样式*/
+.xi-fullcalendar .fc-toolbar{
+  height: 48px;
+}
+.xi-fullcalendar .fc-toolbar .fc-left button{
+  background-color: transparent;
+  background-image:none;
+  border:none;
+  box-shadow: none;
+  font-size:48px;
+  color:#EAEAF2;
+  font-weight: bold;
+  height: 48px;
+
+}
+.xi-fullcalendar .fc-toolbar .fc-right{
+  padding-top:18px;
+}
+.xi-fullcalendar .fc-toolbar .fc-right h2{
+  font-size:16px;
+  color:#606060;
+  font-weight: bold;
+  line-height: 24px;
+}
+.xi-fullcalendar .fc-toolbar .fc-right button{
+  background-color: #fff;
+  background-image: none;
+  height: 24px;
+  line-height: 24px;
+  font-size:12px;
+  color:#606060;
+}
+.xi-fullcalendar .fc th, .xi-fullcalendar .fc td{
+  border-color:#F6F5F7!important;
+}
+.xi-fullcalendar .fc-day-header{
+  font-size:14px;
+  color:#CBBBAB;
+  padding:8px 0!important;
+  text-align: center!important;
+}
+.xi-fullcalendar .fc-event{
+  border:none!important;
+  background: transparent!important;
+}
+
+.xi-fullcalendar .fc-unthemed td.fc-today{
+  background:#fef6eb!important;
+}
+.xi-fullcalendar .fc-row{
+  margin-right:0!important;
+  border-right-width:0!important;
+}
+.xi-fullcalendar .fc-day-grid-container{
+  min-height: 300px!important;
+  height: auto!important;
+  overflow: hidden auto!important;
+}
+/*修改之前的默认样式 end */
+
+/*全日历的event的css*/
+.xi-fullcalendar .cus-event-item {
+  font-size: 12px;
+  color: #606060;
+  line-height: 18px;
+  padding: 8px;
+  position: relative;
+  border-bottom:1px solid #F6F5F7;
+}
+
+.xi-fullcalendar .cus-event-item .cus-time{
+  font-size:14px;
+  color:#606060;
+  font-weight: normal;
+  line-height:18px;
+  margin-bottom:3px;
+  height: 18px;
+  overflow: hidden;
+}
+.xi-fullcalendar .cus-event-item .cus-lesson-name{
+  color:#262626;
+  font-size:14px;
+  font-weight: bold;
+  margin-bottom:3px;
+  height: 24px;
+  line-height:24px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.xi-fullcalendar .cus-event-item .cus-lesson-class{
+  font-size:12px;
+  color:#C0C0C0;
+  margin-bottom:3px;
+  height: 18px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.xi-fullcalendar .cus-event-item .cus-lesson-status {
+  font-size: 12px;
+  color: #909090;
+}
+.xi-fullcalendar .cus-event-item .cus-lesson-status .cus-dot{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #FF8B8B;
+  border-radius: 100%;
+  margin-right:3px;
+}
+
+.xi-fullcalendar .cus-event-item .cus-lesson-offline .cus-dot{
+  background: #85D35F;
+}
+.xi-fullcalendar .cus-event-item .cus-day-time {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.xi-fullcalendar .cus-event-item .cus-day-time img{
+  width:36px;
+  height: 36px;
+}
+
+.xi-fullcalendar .cus-event-item-past{
+  opacity: .4;
+}
+
+.xi-fullcalendar .cus-event-item-coming {
+  background: linear-gradient(270deg, rgba(149, 117, 255, 1) 0%, rgba(179, 127, 211, 1) 100%);
+  color: #fff;
+  border-radius: 3px;
+}
+.xi-fullcalendar .cus-event-item-coming .cus-time,
+.xi-fullcalendar .cus-event-item-coming .cus-lesson-name,
+.xi-fullcalendar .cus-event-item-coming .cus-lesson-class,
+.xi-fullcalendar .cus-event-item-coming .cus-lesson-status{
+  color:#fff;
+}
