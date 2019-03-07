@@ -1,6 +1,6 @@
 # ziyue_client
 
-> 子曰语文前端系统
+> 个人网站
 
 ## Build Setup
 

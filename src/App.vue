@@ -11,7 +11,6 @@ export default {
 </script>
 <style>
   @import "style/common.css";
-  @import "style/tag.css";
   #app {
     position:absolute;
     top:0;
@@ -21,10 +20,10 @@ export default {
     z-index: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+    color: #ffffff;
     margin:0;
     padding:0;
-    background:#F2F3F5;
+    background:#f5f5f5;
     height:100%;
   }
 </style>
