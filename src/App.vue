@@ -20,7 +20,6 @@ export default {
     z-index: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #ffffff;
     margin:0;
     padding:0;
     background:#f5f5f5;

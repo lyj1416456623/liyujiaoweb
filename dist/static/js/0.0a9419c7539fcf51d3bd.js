@@ -1,0 +1,2 @@
+webpackJsonp([0],{"2EdY":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("首页")])},staticRenderFns:[]};var a=n("VU/8")({name:"Index"},r,!1,function(e){n("USeo")},"data-v-72813190",null);t.default=a.exports},USeo:function(e,t){}});
+//# sourceMappingURL=0.0a9419c7539fcf51d3bd.js.map
