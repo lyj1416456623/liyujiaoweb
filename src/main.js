@@ -9,6 +9,7 @@ import '../theme/index.css'
 import 'babel-polyfill'
 import Es6Promise from 'es6-promise'
 require('es6-promise').polyfill()
+require('vue2-animate/dist/vue2-animate.min.css')
 Es6Promise.polyfill()
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';

@@ -17,6 +17,14 @@ export default new Router({
       meta: {
         title: '首页'
       }
+    },
+    {
+      path: '/lunbo',
+      name: 'lunbo',
+      component: resolve => require(['../views/lunbo'],resolve),
+      meta: {
+        title: '轮播'
+      }
     }
   ]
 })
