@@ -25,6 +25,14 @@ export default new Router({
       meta: {
         title: '轮播'
       }
+    },
+    {
+      path: '/hover',
+      name: 'hover',
+      component: resolve => require(['../views/hover'],resolve),
+      meta: {
+        title: 'hover'
+      }
     }
   ]
 })

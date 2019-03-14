@@ -1,6 +1,7 @@
 <template>
   <div class="list-li">
     <router-link class="list-block" to="/lunbo">轮播</router-link>
+    <router-link class="list-block list-block-hover" to="/hover">hover</router-link>
   </div>
 </template>
 <script>
@@ -31,10 +32,13 @@
       height: 50px;
       line-height:50px;
       text-align: center;
-      background: #fff;
+      background: #ffbe00;
       float: left;
       display:block;
-      color:#000;
+      color:#fff;
+    }
+    .list-block-hover{
+      background:#cf9236;
     }
     .list-block:after {
       clear: both;

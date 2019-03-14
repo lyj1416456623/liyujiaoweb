@@ -1,0 +1,473 @@
+$block-color: #F90; //每一块默认的背景颜色 橙色
+$white-color: #fff; //白色
+$black-color: #555; //深灰色
+$green-color: #4caf50; //绿色
+$red-color: #ff0000; //红色
+$blue-color: #2196f3; //蓝色
+$purple-color: #673ab7; //紫色
+$yellow-color: #ffe500; //黄色
+.hover-div {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.hover-block-item {
+  zoom: 1;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.hover-block {
+  margin-top: 10px;
+  overflow: hidden;
+  width: 130px;
+  height: 60px;
+  line-height: 60px;
+  background: $block-color;
+  text-align: center;
+  margin-left: 10px;
+  color: $white-color;
+  position: relative;
+  top: 0;
+  float: left;
+}
+
+.hover-block span {
+  position: relative;
+  z-index: 999;
+  transition: 0.5s;
+  display: block;
+}
+
+/*第一种hover*/
+.hover-block1 {
+  background: $green-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+/*第二种hover */
+.hover-block2 {
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+/*第三种hover */
+.hover-block3 {
+  background: $purple-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 100%;
+  }
+}
+
+/*第四种hover*/
+.hover-block4 {
+  background: $red-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 100%;
+  }
+}
+
+/*第五种hover*/
+.hover-block5 {
+  background: $blue-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    width: 50%;
+  }
+  &:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:after {
+    width: 50%;
+  }
+}
+
+/*第六种hover*/
+.hover-block6 {
+  background: $green-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    width: 50%;
+    left: 0;
+  }
+  &:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:after {
+    right: 0;
+    width: 50%;
+  }
+}
+
+/*第七种hover*/
+.hover-block7 {
+  background: $purple-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 50%;
+    top: 0;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:after {
+    bottom: 0;
+    height: 50%;
+  }
+}
+
+/*第八种hover*/
+.hover-block8 {
+  background: $yellow-color;
+  &:hover {
+    color: $black-color;
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 50%;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:after {
+    height: 50%;
+  }
+}
+
+/*第九种hover*/
+.hover-block9 {
+  background: $blue-color;
+  & > span:nth-child(1) {
+    position: absolute;
+    top: -20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  & > span:nth-child(2) {
+    position: absolute;
+    top: 120%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    color: $black-color;
+    > span:nth-child(1) {
+      top: 50%;
+    }
+    > span:nth-child(2) {
+      top: 50%;
+    }
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 50%;
+  }
+}
+
+/*第十种hover*/
+.hover-block10 {
+  background: $red-color;
+  & > span:nth-child(1) {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+  }
+  & > span:nth-child(2) {
+    position: absolute;
+    top: 120%;
+    right: -20%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    color: $black-color;
+    > span:nth-child(1) {
+      top: 50%;
+      left: 40%;
+    }
+    > span:nth-child(2) {
+      top: 50%;
+      right: 30%;
+    }
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white-color;
+    transition: 0.5s;
+  }
+  &:hover:before {
+    height: 100%;
+  }
+}
+
+/* 卡片 hover */
+.card-block-item {
+  margin-top: 90px;
+  width: 100%;
+  zoom: 1;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.card-block {
+  width: 260px;
+  height: 330px;
+  position: relative;
+  background: $white-color;
+  float:left;
+  margin-right:10px;
+  text-align: center;
+}
+
+/* 卡片 hover 样式1*/
+.card-block1 {
+  .card-img {
+    width: 140px;
+    height: 150px;
+    background: $blue-color;
+    border-radius: 60px 0;
+    overflow: hidden;
+    margin-top: -72px;
+    display: inline-block;
+    transition: 0.3s;
+    border: 2px solid $blue-color;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      transition: 0.3s;
+    }
+  }
+
+  h4 {
+    padding: 16px;
+  }
+  p {
+    padding: 0 16px;
+    font-size: 12px;
+    color: $black-color;
+  }
+  .a-block {
+    width: 100%;
+    height:5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $red-color;
+    transition: 0.5s;
+  }
+  &:hover {
+    .card-img {
+      border-radius: 50%;
+      transition: 0.3s;
+      border: 2px solid $black-color;
+    }
+    .a-block{
+      height:30px;
+    }
+  }
+}
+/* 卡片 hover 样式2*/
+.card-block2{
+  .card-img {
+    width: 100%;
+    height: 250px;
+    background: $blue-color;
+    display: inline-block;
+    transition: 0.3s;
+    box-sizing: border-box;
+    border-bottom:3px solid $green-color;
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      transition: 0.3s;
+    }
+  }
+  .bottom-block{
+    height:40px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  h4 {
+    padding: 16px;
+  }
+  p {
+    padding: 0 16px;
+    font-size: 12px;
+    color: $black-color;
+  }
+  &:hover {
+    text-align: center;
+    .card-img {
+      width:100px;
+      height:100px;
+      border-radius: 0 0 50px 50px;
+      overflow: hidden;
+      transition: 0.3s;
+      border: none;
+    }
+  }
+}
+
+
+
+
